@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .App {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  header, footer {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    margin-top: 20px;
+  }
+  
