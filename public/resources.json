@@ -1,0 +1,23 @@
+[
+  {
+    "id": "r1",
+    "title": "CS101 Lecture Notes",
+    "course": "CS101",
+    "type": "HTML",
+    "url": "/resources/cs101-notes.html"
+  },
+  {
+    "id": "r2",
+    "title": "Calculus II Study Guide",
+    "course": "MATH201",
+    "type": "HTML",
+    "url": "/resources/math201-guide.html"
+  },
+  {
+    "id": "r3",
+    "title": "Technical Writing Tips",
+    "course": "ENG102",
+    "type": "HTML",
+    "url": "/resources/eng102-tips.html"
+  }
+]

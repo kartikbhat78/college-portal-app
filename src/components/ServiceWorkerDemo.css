@@ -1,0 +1,147 @@
+.service-worker-demo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.status-panel {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-indicator {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.status-indicator.online {
+  background-color: #4caf50;
+  color: white;
+}
+
+.status-indicator.offline {
+  background-color: #f44336;
+  color: white;
+}
+
+.feature-support {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.feature {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.feature.supported {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.feature.not-supported {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.feature.permission-granted {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.feature.permission-denied {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.feature.permission-default {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.demo-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.demo-section h3 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.demo-form {
+  margin-top: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.submit-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #1976d2;
+}
+
+.push-btn {
+  background-color: #9c27b0;
+  color: white;
+}
+
+.push-btn:hover:not(:disabled) {
+  background-color: #7b1fa2;
+}
+
+.status-message {
+  margin: 15px 0;
+  padding: 10px 15px;
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  border-radius: 4px;
+}

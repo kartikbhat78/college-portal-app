@@ -1,21 +1,23 @@
+/* App-wide styles */
 .App {
   text-align: center;
+  min-height: 100vh;
+  background: transparent;
+  position: relative;
+  z-index: 1;
 }
 
+/* Optional: logo spinning animation */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header styling */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #1f1f1f;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,10 +26,41 @@
   color: white;
 }
 
+/* Navigation links */
 .App-link {
   color: #61dafb;
+  transition: color 0.3s;
 }
 
+.App-link:hover {
+  color: #bb86fc;
+}
+
+/* Gradient animated background */
+body {
+  background: linear-gradient(-45deg, #1f1c2c, #928dab, #1f1c2c, #434343);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Logo spin keyframes */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +68,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Main content area */
+main {
+  padding: 40px 20px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Add some glow to cards and interactive elements */
+.card-glow {
+  background: #1f1f1f;
+  box-shadow: 0 0 30px rgba(187, 134, 252, 0.15);
+  padding: 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 40px rgba(187, 134, 252, 0.3);
+  transform: translateY(-5px);
 }

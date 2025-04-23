@@ -1,0 +1,244 @@
+.course-schedule {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.schedule-container {
+  display: flex;
+  overflow-x: auto;
+  background-color: rgba(30, 30, 40, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.time-labels {
+  display: flex;
+  flex-direction: column;
+  min-width: 60px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.time-header, .day-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 0 10px;
+  background-color: rgba(20, 20, 30, 0.8);
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.time-slot {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.schedule-grid {
+  display: flex;
+  flex-grow: 1;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 150px;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.day-column:last-child {
+  border-right: none;
+}
+
+.grid-cell {
+  height: 80px;
+  padding: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.course-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.course-code {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.course-room {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.course-details {
+  background-color: rgba(30, 30, 40, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.course-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.course-code-badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.info-label {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
+  min-width: 80px;
+}
+
+.info-value {
+  color: white;
+}
+
+.schedule-list {
+  display: flex;
+  gap: 10px;
+}
+
+.schedule-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.course-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.add-calendar-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-calendar-btn:hover {
+  background-color: #4338ca;
+}
+
+.add-calendar-btn:disabled {
+  background-color: #6b7280;
+  cursor: not-allowed;
+}
+
+.calendar-status {
+  background-color: rgba(79, 70, 229, 0.2);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.course-details-placeholder {
+  background-color: rgba(30, 30, 40, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .schedule-container {
+    overflow-x: auto;
+  }
+  
+  .day-column {
+    min-width: 120px;
+  }
+  
+  .course-info {
+    flex-direction: column;
+  }
+  
+  .schedule-list {
+    flex-direction: column;
+  }
+}

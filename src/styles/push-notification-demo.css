@@ -1,0 +1,131 @@
+.push-notification-demo {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.push-notification-demo h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.push-notification-demo h3 {
+  color: #3498db;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.status-box {
+  background-color: #e9f7fe;
+  border-left: 4px solid #3498db;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button-group button,
+.test-push-section button,
+.toggle-push-demo-btn,
+.notification-buttons button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.button-group button:hover,
+.test-push-section button:hover,
+.toggle-push-demo-btn:hover,
+.notification-buttons button:hover {
+  background-color: #2980b9;
+}
+
+.test-push-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1f8ff;
+  border-radius: 6px;
+}
+
+.notification-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.notification-buttons button {
+  flex: 1;
+}
+
+.notification-buttons button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.subscription-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.subscription-info pre {
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.push-demo-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+}
+
+.toggle-push-demo-btn {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .button-group button {
+    width: 100%;
+  }
+}

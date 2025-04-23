@@ -1,13 +1,17 @@
-// src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom/client';  // Correct import for React 18
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
-// Use createRoot instead of render in React 18
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
+
+serviceWorkerRegistration.register({
+  onSuccess: (reg) => console.log('✅ Service Worker registered:', reg),
+  onUpdate: (reg) => console.log('🔄 New content available.'),
+});
