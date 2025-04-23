@@ -1,0 +1,11 @@
+{
+  "short_name": "College Portal",
+  "name": "My College Portal",
+  "description": "A progressive web app for college students",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1a202c",
+  "background_color": "#1a202c",
+  "orientation": "portrait",
+  "scope": "/"
+}
