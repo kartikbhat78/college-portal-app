@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+# college-portal-app
+my college portal app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,7 +71,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# college-portal-app
-my college portall app
->>>>>>> 175425e082e9bf369c5dc7a2900ea93e50a67c24
